@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewData["Title"] = "Регистрация";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="~/css/materialize.min.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body class="BackgroundLite" onload="InitialFunction();">
+    <div class="roundimage ramka-7">
+        <img src="~/other/images/Emblema2.png" height="100" width="100" />
+    </div>
+
+    <h1> Не зарегестрировались? </h1>
+    <h2> <b>Тогда добро пожаловать! </b> </h2>
+    <form method="post" id="regform">
+        <div class="column">
+        <div class="input-field col s3">
+            <input name="Login" type="text" class="validate  ">
+            <label class="active" >Логин</label>
+        </div>
+        <div class="input-field col s6">
+            <input name="Password" type="password" class="validate  ">
+            <label class="active">Пароль</label>
+        </div>
+
+        <div class="input-field col s6">
+            <input name="RepPassword" type="password" class="validate  ">
+            <label class="active" >Введите пароль еще раз</label>
+        </div>
+
+        <div class="input-field col s6">
+            <input name="Email" type="email" class="validate ">
+            <label class="active" >Email</label>
+        </div>
+
+    <div class="column">
+        <p id="PStatus" > </p>
+                <p id="PIconStatus">  
+                    <i id="IconStatus" class="large material-icons">check_circle</i>
+                    </p>
+    </div>
+            <button type="submit" id="RegBtn" class="waves-effect waves-light btn ButtonWhite">Регистрация</button>
+    </div>
+        
+        </form>
+
+    <a class="waves-effect waves-light btn ButtonBlack" asp-controller="Home" asp-action="GoToSign">К Авторизации</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src ="~/js/AutorizationAndRegistration.js" ></script>
+</body>
+</html>

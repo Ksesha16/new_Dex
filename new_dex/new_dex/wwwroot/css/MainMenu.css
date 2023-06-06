@@ -1,0 +1,218 @@
+﻿
+
+nav {
+    width: 60%;
+    background: #1C1C1C;
+    border-radius: 90px;
+    -webkit-transition: 2s ease;
+    box-shadow: 0px 0px red, 0em 0em 3em purple;
+    position: fixed;
+    place-content: center;
+    text-align: center;
+}
+
+    nav:hover {
+        background: #8c8c8c;
+        border-radius: 90px;
+        transform: scale(1.3);
+        transition: 2s;
+    }
+
+.Menuspan {
+    display: block;
+    font-size: 15px;
+    padding-bottom: -50px;
+}
+
+#nickname {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.photo {
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+}
+
+    .photo:hover::after {
+        content: attr(data-title); /* Выводим текст */
+        position: absolute; /* Абсолютное позиционирование */
+        left: 20%;
+        top: 70%; /* Положение подсказки */
+        z-index: 1; /* Отображаем подсказку поверх других элементов */
+        background: #333; /* Полупрозрачный цвет фона */
+        font-family: Arial, sans-serif; /* Гарнитура шрифта */
+        font-size: 11px; /* Размер текста подсказки */
+        padding: 0px 10px; /* Поля */
+        border: 1px solid #333; /* Параметры рамки */
+    }
+
+.bignews {
+    text-align: center;
+    place-content: center;
+    margin-left: -200px;
+    margin-right: -200px;
+}
+
+
+    .bignews button {
+        background: #dbdbdb;
+        border-radius: 30px;
+        width: 330px;
+        height: 70px;
+        font-size: 20px;
+        margin-bottom: 30px;
+        color: black;
+        margin-top: 30px;
+        margin-inline: 100px;
+    }
+
+        .bignews button i {
+            color: white;
+        }
+
+.imgbn {
+    width: 100%;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.smallnews {
+    margin-top: 50px;
+    background: black;
+    border-radius: 30px;
+    width: 250px;
+    height: 290px;
+    bottom: 0px;
+    margin-inline: 10px;
+    display: inline-block;
+}
+
+    .smallnews span {
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .smallnews button {
+        font-size: 18px;
+        font-weight: 500;
+        background: #1C1C1C;
+        color: white;
+    }
+
+    .smallnews img {
+        width: 200px;
+        height: 150px;
+        display: block;
+        margin-left: 24px;
+        margin-top: 20px;
+        border-radius: 20px;
+    }
+
+    .smallnews button {
+        width: 200px;
+        height: 50px;
+        display: block;
+        margin-left: 24px;
+        margin-top: 20px;
+        border-radius: 20px;
+    }
+
+.smallnewsbase {
+    display: inline-block;
+}
+
+.CategoryPanel {
+}
+
+.balance {
+    background: #dedede;
+    display: inline;
+    color: black;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 20px;
+}
+
+.round {
+    border-radius: 50%;
+    -webkit-transition: 2s ease;
+}
+
+    .round:hover {
+        border-radius: 50%;
+        transform: scale(1.2);
+        box-shadow: 0px 0px red, 0em 0em 3em white;
+        transition: 2s;
+    }
+
+#GoToProfile {
+    display: none;
+    visibility: collapse;
+}
+
+p {
+    font-size: 60px;
+}
+
+    p br {
+        margin-top: 100px;
+        font-size: 60px
+    }
+
+
+
+
+
+.ramka-5 {
+    position: relative;
+    z-index: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+    .ramka-5::before {
+        content: '';
+        position: absolute;
+        z-index: -2;
+        left: -50%;
+        top: -50%;
+        width: 200%;
+        height: 200%;
+        background-color: #BFE2FF;
+        background-repeat: no-repeat;
+        background-size: 50% 50%, 50% 50%;
+        background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+        background-image: linear-gradient(#BFE2FF, #BFE2FF), linear-gradient(#337AB7, #337AB7), linear-gradient(#BFE2FF, #BFE2FF), linear-gradient(#337AB7, #337AB7);
+        animation: anim-ramka-5 4s linear infinite;
+    }
+
+    .ramka-5::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: 6px;
+        top: 6px;
+        width: calc(100% - 12px);
+        height: calc(100% - 12px);
+        background: white;
+        border-radius: 5px;
+    }
+
+@keyframes anim-ramka-5 {
+    100% {
+        transform: rotate(1turn);
+    }
+}

@@ -1,0 +1,299 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,400italic,700italic&subset=latin,cyrillic);
+
+
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
+
+*, *:before, *:after {
+    box-sizing: border-box
+}
+
+.textblack {
+    color: black;
+}
+
+.wrap {
+    position: relative;
+    margin: 50px auto;
+    text-align: center;
+    width: 320px;
+    height: 370px;
+    background: white;
+    padding: 30px 40px;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+    .wrap:before, .wrap:after {
+        content: "";
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        border: 1px solid rgba(0, 0, 0, .1);
+        background: white;
+    }
+
+    .wrap:before {
+        top: 5px;
+        left: -5px;
+        z-index: -1;
+    }
+
+    .wrap:after {
+        top: 10px;
+        left: -10px;
+        z-index: -2;
+    }
+
+.cat span {
+    font-family: 'Comfortaa', cursive;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #ff6f5a;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #333333;
+}
+
+.public {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #999999;
+    font-size: 13px;
+}
+
+p {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #555555;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.more-button {
+    font-family: 'Comfortaa', cursive;
+    color: #333333;
+    font-size: 11px;
+    padding-bottom: 8px;
+    display: inline-block;
+    margin: 35px 0 20px;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: .3s linear;
+}
+
+    .more-button:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        margin-left: -20px;
+        bottom: 0;
+        height: 1px;
+        width: 40px;
+        background: #333333;
+        transition: .3s linear;
+    }
+
+    .more-button:hover {
+        color: #ff6f5a;
+    }
+
+        .more-button:hover:before {
+            background: #ff6f5a;
+        }
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.post {
+    width: 60%;
+    margin: 30px auto 0;
+}
+
+.post-container {
+    width: 100%;
+    padding: 30px;
+}
+
+
+.post-info {
+    padding-top: 35px;
+}
+
+
+.roundimage {
+    margin-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.BackgroundDarkGradient {
+    background-image: linear-gradient(#290a54, #790979, #ff00f5);
+    background-attachment: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: center;
+}
+
+.BackgroundLite {
+    background-image: url("../other/images/background/BackgroundWhite.jpg");
+    min-width: 100%;
+    min-height: 100%;
+    text-align: center;
+}
+
+
+.ButtonWhite {
+    width: 400px;
+    height: 70px;
+    background-image: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(195,195,195,1) 100%);
+    text-align: center;
+    color: black;
+    place-content: center;
+    font-size: 25px;
+    letter-spacing: 5px;
+    line-height: 70px;
+    box-sizing: border-box;
+}
+
+    .ButtonWhite:hover {
+        color: white;
+        background-image: radial-gradient(circle, rgba(93,93,93,1) 0%, rgba(0,0,0,1) 100%);
+        transition: 2s;
+    }
+
+.ButtonBlack:hover {
+    color: black;
+    background-image: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(195,195,195,1) 100%);
+    transition: 2s;
+}
+
+.ButtonBlack {
+    width: 400px;
+    height: 70px;
+    background-image: radial-gradient(circle, rgba(93,93,93,1) 0%, rgba(0,0,0,1) 100%);
+    text-align: center;
+    place-content: center;
+    font-size: 25px;
+    letter-spacing: 5px;
+    line-height: 70px;
+    box-sizing: border-box;
+}
+
+.StatusOfRegistrationTrue {
+    color: #3ebd5c;
+    font-size: 60px;
+    font-family: Impact;
+    text-align: center;
+    text-shadow: #000000;
+}
+
+.StatusOfRegistrationFalse {
+    color: #bd3e3e;
+    font-size: 60px;
+    font-family: Impact;
+    text-align: center;
+    text-shadow: #000000;
+}
+
+.ErrorSpan {
+    text-align: left;
+    font-size: 16px;
+    color: red;
+}
+
+#fileLoader {
+    text-align: center;
+    place-content: center;
+    display: block;
+}
+
+#autorizform {
+    text-align: center;
+    place-content: center;
+    display: block;
+}
+
+#avatarSubmit {
+    width: 400px;
+    height: 70px;
+    background-image: linear-gradient(90deg, rgba(10,84,50,1) 0%, rgba(78,9,121,1) 44%, rgba(0,168,255,1) 100%);
+    color: white;
+    text-align: center;
+    place-content: center;
+    font-size: 25px;
+    letter-spacing: 5px;
+    line-height: 70px;
+    box-sizing: border-box;
+}
+
+
+
+.ramka-7 {
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    position: relative;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+    .ramka-7:after,
+    .ramka-7:before {
+        mix-blend-mode: multiply;
+        filter: none;
+        z-index: -1;
+        content: '';
+        width: calc(100% + 90px);
+        height: calc(100% + 90px);
+        position: absolute;
+        animation: anim-ramka-7 8s ease-in-out infinite;
+    }
+
+@keyframes anim-ramka-7 {
+    0%, 100% {
+        clip-path: polygon(0 0, calc(100% - (33px)) calc(0% + (33px)), 100% 100%, calc(0% + (33px)) calc(100% - (33px)));
+    }
+
+    50% {
+        clip-path: polygon(calc(0% + (33px)) calc(0% + (33px)), 100% 0, calc(100% - (33px)) calc(100% - (33px)), 0 100%);
+    }
+}
+
+.ramka-7:after {
+    animation-delay: -5s;
+    background-color: #4d4d4d;
+    clip-path: polygon(0 0, calc(100% - (33px)) calc(0% + (33px)), 100% 100%, calc(0% + (33px)) calc(100% - (33px)));
+}
+
+.ramka-7:before {
+    background-color: #bababa;
+    clip-path: polygon(calc(0% + (33px)) calc(0% + (33px)), 100% 0, calc(100% - (33px)) calc(100% - (33px)), 0 100%);
+}
+
+.ramka-7:hover:before,
+.ramka-7:hover:after {
+    animation-play-state: paused;
+}
+

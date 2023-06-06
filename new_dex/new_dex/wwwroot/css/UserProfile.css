@@ -1,0 +1,71 @@
+﻿#BaseData {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    display: block;
+}
+
+i {
+    color: black;
+}
+
+#SpansBaseData {
+    display: inline-block;
+    width: 50%;
+    justify-content: center;
+    place-content: center
+}
+
+#avatar img {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+#avatar {
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    background: transparent;
+}
+
+#updatepass {
+    margin: 30px;
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(60,60,60,1) 100%);
+    border-color: white;
+    border-width: 20px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#updateBtn {
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(107,107,107,1) 100%);
+    border-radius: 50px;
+    color: black;
+}
+
+h1 {
+    color: white;
+}
+
+.photo {
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+}
+
+    .photo:hover::after {
+        content: attr(data-title); /* Выводим текст */
+        position: absolute; /* Абсолютное позиционирование */
+        left: 20%;
+        top: 70%; /* Положение подсказки */
+        z-index: 1; /* Отображаем подсказку поверх других элементов */
+        background: #333; /* Полупрозрачный цвет фона */
+        font-family: Arial, sans-serif; /* Гарнитура шрифта */
+        font-size: 11px; /* Размер текста подсказки */
+        padding: 0px 10px; /* Поля */
+        border: 1px solid #333; /* Параметры рамки */
+    }
+
+#InnID {
+    display: none;
+}
