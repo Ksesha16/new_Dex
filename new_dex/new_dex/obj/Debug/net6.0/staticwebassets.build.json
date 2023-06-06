@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dvLP4IgiCR2dj6aKhkXWlk1YcVVLhv8wTiGEEf5iKi8=",
+  "Hash": "ceC7/unL8BW1Rc8L4zG+A/pd1IbWbQshXBVvBzcXebw=",
   "Source": "new_dex",
   "BasePath": "_content/new_dex",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\dex\\new_dex\\new_dex\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\new_dex.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\dex\\new_dex\\new_dex\\wwwroot\\css\\about_us.css",
+      "SourceId": "new_dex",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dex\\new_dex\\new_dex\\wwwroot\\",
+      "BasePath": "_content/new_dex",
+      "RelativePath": "css/about_us.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\about_us.css"
     },
     {
       "Identity": "D:\\dex\\new_dex\\new_dex\\wwwroot\\css\\MainMenu.css",
@@ -1139,6 +1156,23 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "D:\\dex\\new_dex\\new_dex\\wwwroot\\other\\images\\Albina.jpg",
+      "SourceId": "new_dex",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dex\\new_dex\\new_dex\\wwwroot\\",
+      "BasePath": "_content/new_dex",
+      "RelativePath": "other/images/Albina.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\other\\images\\Albina.jpg"
+    },
+    {
       "Identity": "D:\\dex\\new_dex\\new_dex\\wwwroot\\other\\images\\b7f594cb.jpg",
       "SourceId": "new_dex",
       "SourceType": "Discovered",
@@ -1224,6 +1258,23 @@
       "OriginalItemSpec": "wwwroot\\other\\images\\Emblema2.png"
     },
     {
+      "Identity": "D:\\dex\\new_dex\\new_dex\\wwwroot\\other\\images\\photo_2023-04-23_20-35-51.jpg",
+      "SourceId": "new_dex",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dex\\new_dex\\new_dex\\wwwroot\\",
+      "BasePath": "_content/new_dex",
+      "RelativePath": "other/images/photo_2023-04-23_20-35-51.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\other\\images\\photo_2023-04-23_20-35-51.jpg"
+    },
+    {
       "Identity": "D:\\dex\\new_dex\\new_dex\\wwwroot\\other\\images\\StandartProfile.png",
       "SourceId": "new_dex",
       "SourceType": "Discovered",
@@ -1239,6 +1290,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\other\\images\\StandartProfile.png"
+    },
+    {
+      "Identity": "D:\\dex\\new_dex\\new_dex\\wwwroot\\other\\images\\Альбина.jpg",
+      "SourceId": "new_dex",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dex\\new_dex\\new_dex\\wwwroot\\",
+      "BasePath": "_content/new_dex",
+      "RelativePath": "other/images/Альбина.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\other\\images\\Альбина.jpg"
+    },
+    {
+      "Identity": "D:\\dex\\new_dex\\new_dex\\wwwroot\\other\\images\\курсач.jpg",
+      "SourceId": "new_dex",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dex\\new_dex\\new_dex\\wwwroot\\",
+      "BasePath": "_content/new_dex",
+      "RelativePath": "other/images/курсач.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\other\\images\\курсач.jpg"
+    },
+    {
+      "Identity": "D:\\dex\\new_dex\\new_dex\\wwwroot\\other\\images\\Радмир.jpg",
+      "SourceId": "new_dex",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\dex\\new_dex\\new_dex\\wwwroot\\",
+      "BasePath": "_content/new_dex",
+      "RelativePath": "other/images/Радмир.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\other\\images\\Радмир.jpg"
     }
   ]
 }

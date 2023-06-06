@@ -44,5 +44,13 @@ namespace new_dex.Controllers
         {
             return View("MainMenu"); // Переход на действие "Index" (страницу "Авторизация")
         }
+        public IActionResult ShopMenu()
+        {
+            return View("ShopMenu"); // Переход на действие "Index" (страницу "Авторизация")
+        }
+        public IActionResult UserProfile()
+        {
+            return View("UserProfile"); // Переход на действие "Index" (страницу "Авторизация")
+        }
     }
 }

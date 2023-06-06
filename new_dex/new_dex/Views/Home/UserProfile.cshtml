@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="~/css/materialize.min.css" media="screen,projection" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link type="text/css" rel="stylesheet" href="~/css/site.css" />
+	<link type="text/css" rel="stylesheet" href="~/css/UserProfile.css" />
+</head>
+
+<body class="BackgroundLite" onload="InitialFunction();">
+	@*<form method="post" asp-controller="UserProfile" id="userform">
+		@using (DexterContext db = new DexterContext())
+		{
+			User us = db.Users.FirstOrDefault(x => x.LoginOfUser == Initial.Login);
+			string Role = db.Roles.FirstOrDefault(x => x.LoginOfUsers == Initial.Login).NameOfRole;
+			int idpriv = db.PrivilegeUsers.FirstOrDefault(x => x.LoginUser == Initial.Login).IdProvolege ?? 0;
+			string? priv;
+			try
+			{
+				priv = db.Privileges.FirstOrDefault(x => x.IdStatus == idpriv).NameOfStatus;
+			}
+			catch
+			{
+				priv = "Новичок";
+			}
+			<div id="BaseData">
+				<div id="avatar">
+
+					@if (us.Avatar == null)
+					{
+
+						<img src="~/other/images/Emblema.png" id="imgava" onclick="Clik();" class="round" />
+					}
+					else
+					{
+
+						<img src="data:image /jpeg;base64,@(Convert.ToBase64String(us.Avatar))" id="imgava" onclick="Clik();" class="round" />
+
+					}
+				</div>
+				<div id="SpansBaseData">
+					<div class="input-field col s6">
+						<i class="material-icons prefix">account_circle</i>
+						<input id="icon_prefix" name="Name" type="text" class="validate" value="@us.NameOfUser">
+						<label for="icon_prefix">Имя</label>
+					</div>
+					<div class="input-field col s6">
+						<i class="material-icons prefix">stars</i>
+						<input id="icon_prefix" type="text" class="validate" value="@Role" readonly>
+						<label for="icon_prefix">Роль</label>
+					</div>
+					<div class="input-field col s6">
+						<i class="material-icons prefix">star</i>
+						<input id="icon_prefix" type="text" class="validate" readonly value="@priv">
+						<label for="icon_prefix">Превилегия</label>
+					</div>
+				</div>
+			</div>
+			<div id="OtherData">
+				<div class="input-field col s6">
+					<i class="material-icons prefix">credit_card</i>
+					<input id="icon_prefix" type="text" name="BankCard" class="validate" value="@us.BankCard">
+					<label for="icon_prefix">Банковская карта</label>
+				</div>
+				<div class="input-field col s6">
+					<i class="material-icons prefix">receipt_long</i>
+					<input id="icon_prefix" type="text" name="Passport" class="validate" value="@us.Passport">
+					<label for="icon_prefix">Паспорт</label>
+				</div>
+				@if (Role == "Модератор" || Role == "Администратор")
+				{
+					<div class="input-field col s6">
+						<i class="material-icons prefix">description</i>
+						<input id="icon_prefix" type="text" name="Inn" class="validate" value="@us.Inn">
+						<label for="icon_prefix">ИНН</label>
+					</div>
+				}
+				else
+				{
+					<div class="input-field col s6" id="InnID">
+						<i class="material-icons prefix">description</i>
+						<input id="icon_prefix" type="text" name="Inn" class="validate" value="@us.Inn">
+						<label for="icon_prefix">ИНН</label>
+					</div>
+				}
+				<div class="input-field col s6">
+					<i class="material-icons prefix">home</i>
+					<input id="icon_prefix" type="text" name="Address" class="validate" value="@us.AddressOfUser">
+					<label for="icon_prefix">Адресс</label>
+				</div>
+				<div class="input-field col s6">
+					<i class="material-icons prefix">mail</i>
+					<input id="icon_prefix" type="email" name="Email" class="validate" value="@us.Email">
+					<label for="icon_prefix">Email</label>
+				</div>
+				<div class="input-field col s6">
+					<i class="material-icons prefix">call</i>
+					<input id="icon_prefix" type="tel" name="Telephone" class="validate" value="@us.Telephone">
+					<label for="icon_prefix">Телефон</label>
+				</div>
+			</div>
+		}
+		<button type="submit" id="signBtn"
+				class="waves-effect waves-light btn ButtonWhite">
+			Сохранить
+		</button>
+	</form>*@
+	<form method="post" id="passform" asp-controller="UserProfile" asp-action="UpdatePassword">
+		<div id="updatepass">
+			<h1>Обновить пароль</h1>
+			<div class="input-field col s6">
+				<i class="material-icons prefix">lock</i>
+				<input id="icon_prefix" type="text" name="Password" class="validate">
+				<label for="icon_prefix">Введите новый пароль</label>
+			</div>
+
+			<div class="input-field col s6">
+				<i class="material-icons prefix">lock_open</i>
+				<input id="icon_prefix" type="text" name="RepPassword" class="validate">
+				<label for="icon_prefix">Повторите пароль</label>
+			</div>
+
+			<button type="submit" id="updateBtn"
+					class="waves-effect waves-light btn ButtonScaleSignUp">
+				Обновить
+			</button>
+
+		</div>
+	</form>
+
+	<i class="material-icons large photo leave" data-title="Выйти с аккаунта" />exit_to_app</i>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+	<script src="~/js/UserProfile.js"></script>
+
+</body>
+</html>
