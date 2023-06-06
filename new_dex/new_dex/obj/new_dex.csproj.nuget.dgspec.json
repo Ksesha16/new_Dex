@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\antox\\Source\\Repos\\new_Dex\\new_dex\\new_dex\\new_dex.csproj": {}
+    "C:\\Users\\antox\\source\\repos\\new_Dex\\new_dex\\new_dex\\new_dex.csproj": {}
   },
   "projects": {
-    "C:\\Users\\antox\\Source\\Repos\\new_Dex\\new_dex\\new_dex\\new_dex.csproj": {
+    "C:\\Users\\antox\\source\\repos\\new_Dex\\new_dex\\new_dex\\new_dex.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\antox\\Source\\Repos\\new_Dex\\new_dex\\new_dex\\new_dex.csproj",
+        "projectUniqueName": "C:\\Users\\antox\\source\\repos\\new_Dex\\new_dex\\new_dex\\new_dex.csproj",
         "projectName": "new_dex",
-        "projectPath": "C:\\Users\\antox\\Source\\Repos\\new_Dex\\new_dex\\new_dex\\new_dex.csproj",
+        "projectPath": "C:\\Users\\antox\\source\\repos\\new_Dex\\new_dex\\new_dex\\new_dex.csproj",
         "packagesPath": "C:\\Users\\antox\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\antox\\Source\\Repos\\new_Dex\\new_dex\\new_dex\\obj\\",
+        "outputPath": "C:\\Users\\antox\\source\\repos\\new_Dex\\new_dex\\new_dex\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\antox\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[6.2.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
