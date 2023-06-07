@@ -30,32 +30,39 @@ public class AuthorizationController : Controller
         // Путь к файлу Excel
         string filePath = @"C:\Users\antox\source\repos\new_Dex\new_dex\Tabel\User.xlsx";
 
-        // Чтение данных из файла Excel
+        // Установка контекста лицензирования
+        ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
+        // Открытие пакета Excel
         using (ExcelPackage package = new ExcelPackage(new FileInfo(filePath)))
         {
-            ExcelWorksheet worksheet = package.Workbook.Worksheets.FirstOrDefault();
-            if (worksheet != null)
+            ExcelWorksheet worksheet = package.Workbook.Worksheets["Users"];
+            if (worksheet == null)
             {
-                // Поиск соответствия логина и пароля в файле Excel
-                int rowCount = worksheet.Dimension.Rows;
-                for (int row = 2; row <= rowCount; row++) // Начинаем с 2 строки, так как первая строка содержит заголовки
-                {
-                    string excelLogin = worksheet.Cells[row, 1]?.Value?.ToString();
-                    string excelPassword = worksheet.Cells[row, 2]?.Value?.ToString();
+                // Если лист не существует, перенаправление на страницу регистрации
+                return RedirectToAction("Register", "Registration");
+            }
 
-                    if (excelLogin == login && excelPassword == password)
-                    {
-                        // Логин и пароль найдены, перенаправляем на главное меню
-                        return RedirectToAction("MainMenu", "Home");
-                    }
+            // Получение последней заполненной строки в Excel
+            int lastRow = worksheet.Dimension.Rows;
+
+            // Проверка логина и пароля
+            for (int row = 2; row <= lastRow; row++) // начинаем с 2, потому что 1 строка - это заголовки
+            {
+                if (worksheet.Cells[row, 1].Value.ToString() == login &&
+                    worksheet.Cells[row, 2].Value.ToString() == password)
+                {
+                    // Пользователь найден, перенаправление на страницу MainMenu
+                    return RedirectToAction("MainMenu", "Home");
                 }
             }
         }
 
-        // Логин и пароль не найдены, отображаем ошибку
-        ViewBag.ErrorMessage = "Неверный логин или пароль";
-        return View("Login");
+        // Пользователь не найден, возвращаемся на страницу входа с сообщением об ошибке
+        ModelState.AddModelError("", "Неверный логин или пароль");
+        return View();
     }
+
 
 
 
