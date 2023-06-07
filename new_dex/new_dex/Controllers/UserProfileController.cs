@@ -11,7 +11,7 @@ namespace new_dex.Controllers
         public async Task<IActionResult> SaveProfile(string name, string bankCard, string address, string email, string telephone, IFormFile photo)
         {
             // Путь к файлу Excel
-            string filePath = @"C:\Users\antox\source\repos\new_Dex\new_dex\Tabel\User.xlsx";
+            string filePath = @"D:\dex\new_dex\Tabel\User.xlsx";
 
             // Установка контекста лицензирования
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;

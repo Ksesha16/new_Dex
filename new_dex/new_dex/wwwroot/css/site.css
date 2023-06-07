@@ -296,3 +296,122 @@ body {
 .ramka-7:hover:after {
     animation-play-state: paused;
 }
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.post-wrap {
+    background: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    width: 420px;
+    margin: 50px auto 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.post-inner {
+    margin: -75px 20px 20px;
+    padding: 15px;
+    background: #122330;
+    position: relative;
+}
+
+    .post-inner:after {
+        display: block;
+        content: "";
+        position: absolute;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+        top: -10px;
+        border: 3px solid #122330;
+    }
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background: #F15A40;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    vertical-align: super;
+}
+
+.first {
+    margin-right: 24px;
+}
+
+.last {
+    margin-left: 24px;
+}
+
+.dot:before, .dot:after {
+    content: "";
+    height: 5px;
+    width: 5px;
+    background: #F15A40;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+}
+
+.dot:before {
+    left: 10px;
+}
+
+.dot:after {
+    right: 10px;
+}
+
+.post-inner h3 {
+    font-family: 'Playfair Display', serif;
+    color: #EFECD9;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+
+.post-wrap p {
+    font-family: 'Lora', serif;
+    padding-top: 20px;
+    line-height: 24px;
+}
+.card {
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    max-width: 300px;
+    width: 100%;
+    margin: 50px auto 0;
+    background: white;
+}
+
+.card-title {
+    font-family: 'Playfair Display', "Georgia","Times New Roman",serif;
+    font-size: 20px;
+    line-height: 1;
+    padding-bottom: 15px;
+    margin: 10px 0 20px;
+    color: black;
+    text-align: center;
+    border-bottom: 3px double #eaeaea;
+}
+
+.card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 0;
+}
+.Anton {
+    display: flex;
+    justify-content: space-between;
+}

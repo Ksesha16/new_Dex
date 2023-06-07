@@ -9297,3 +9297,340 @@ input[type=range]::-ms-thumb {
         margin-top: 1.2rem;
     }
 }
+* {
+   box-sizing: border-box;
+}
+body {
+   background: #FFEBD8;
+}
+.tag-container {
+   position: relative;
+   margin: 55px auto 0;
+   width: 260px;
+   text-align: center;
+   font-family: Roboto;
+}
+.tag-container:before {
+   content: "";
+   position: absolute;
+   top: -25px;
+   left: 25px;
+   right: 25px;
+   height: 25px;
+   background: #FCF8F3;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+.tag-container:after {
+   content: "";
+   position: absolute;
+   z-index: 5;
+   top: -35px;
+   left: calc(50% - 8px);
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background: #FFEBD8;
+   box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .3), 0 0 0 18px #FCF8F3;
+}
+.tag-inner {
+   padding: 20px 20px 40px;
+   border-radius: 20px;
+   background: #FCF8F3;
+   box-shadow: 0 3px 4px rgba(0, 0, 0, .1)
+}
+.tag-inner h3 {
+   font-family: 'Marck Script', cursive;
+   font-size: 26px;
+   color: #777;
+   font-weight: normal;
+}
+.price-container {
+   position: relative;
+   margin: 0 -20px;
+}
+.price-container:after {
+   content: "";
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 12px;
+   height: 2px;
+   background: #FE5741;
+}
+.price-button {
+   position: relative;
+   z-index: 5;
+   display: inline-block;
+   line-height: 30px;
+   text-decoration: none;
+   color: white;
+   padding: 0 20px;
+   background: #FE5741;
+   border-radius: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+p, h3 {margin: 0}
+.post {
+  width: 300px;
+  margin: 50px auto 0;
+  position: relative;
+  background: white;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  border-radius: 3px;
+  font-family: 'Scada', sans-serif;
+}
+.post-top {
+  min-height: 45px;
+  position: relative;
+  overflow: hidden;
+}
+.post-top a {
+  text-decoration: none;
+  display: block;
+}
+.post-top-img {
+  border-radius: 3px 3px 0 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.post-top-angle {
+  width: 180px;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  top: 20px;
+  right: -50px;
+  transform:rotate(45deg);
+  color: #fefefe;
+  text-align: center;
+  background: #F8CF82;
+  font-size: 16px;
+  font-weight:bold;
+}
+.post-top-price {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}
+.post-top-price span {
+display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 20px;
+  background: #F8CF82;
+  border-radius: 3px 0 0 0;
+  color: #fefefe;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.post-top-price:after {
+  content: " ";
+  display: block;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #F8CF82;
+}
+.post-content {
+  padding: 20px;
+  font-family: 'Scada', sans-serif;
+}
+.post-content h3 {
+  font-size: 1.5em;
+}
+.post-content p {
+  margin-top: 10px;
+  color: #6e6e6e;
+  line-height: 1.5em;
+}
+.image-border {
+    max-width: 300px;
+    margin: 50px auto 0;
+    padding: 15px;
+    border-width: 15px;
+    border-style: solid;
+    border-image: url(https://html5book.ru/wp-content/uploads/2015/10/border-diagonal.png) 25% repeat repeat;
+    background: white;
+}
+
+.post-info {
+    text-align: center;
+}
+
+.post-title {
+    font-family: 'Playfair Display', "Georgia","Times New Roman",serif;
+    font-size: 24px;
+    line-height: 1;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.image-border img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.meta {
+    display: inline-block;
+    font-size: 12px;
+    font-style: italic;
+    margin: 0 10px;
+    color: #999999;
+}
+
+.diamond {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000000;
+    display: inline-block;
+    margin: 0 5px;
+    transform: rotate(45deg);
+    position: relative;
+}
+
+    .diamond:nth-of-type(2) {
+        background: black;
+    }
+
+    * {
+  box-sizing: border-box;
+}
+p, h3 {margin: 0}
+.post {
+  width: 300px;
+  margin: 50px auto 0;
+  position: relative;
+  background: white;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  border-radius: 3px;
+  font-family: 'Scada', sans-serif;
+}
+.post-top {
+  min-height: 45px;
+  position: relative;
+  overflow: hidden;
+}
+.post-top a {
+  text-decoration: none;
+  display: block;
+}
+.post-top-img {
+  border-radius: 3px 3px 0 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.post-top-angle {
+  width: 180px;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  top: 20px;
+  right: -50px;
+  transform:rotate(45deg);
+  color: #fefefe;
+  text-align: center;
+  background: #F8CF82;
+  font-size: 16px;
+  font-weight:bold;
+}
+.post-top-price {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}
+.post-top-price span {
+display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 20px;
+  background: #F8CF82;
+  border-radius: 3px 0 0 0;
+  color: #fefefe;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.post-top-price:after {
+  content: " ";
+  display: block;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #F8CF82;
+}
+.post-content {
+  padding: 20px;
+  font-family: 'Scada', sans-serif;
+}
+.post-content h3 {
+  font-size: 1.5em;
+}
+.post-content p {
+  margin-top: 10px;
+  color: #6e6e6e;
+  line-height: 1.5em;
+
+  * {
+  box-sizing: border-box;
+}
+.image-box {
+  position: relative;
+  width: 600px; 
+  margin: 50px auto 0;
+}
+.image-box .border {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  border: 2px solid white;
+  z-index: 1;
+}
+.image-box img {
+  display: block;
+  position: relative;
+  width: 600px;
+  height: 442px;
+}
+.image-box .image-content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 60%;
+  padding: 20px;
+  z-index: 2;
+  background: linear-gradient(to bottom,rgba(18,26,63,0.3),rgba(18,26,63,0.9));
+}
+.image-box .image-header {
+  font-size: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(255,255,255,0.4);
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+}
+.image-box p {
+  color: rgba(255,255,255,0.9);
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 24px;
+}

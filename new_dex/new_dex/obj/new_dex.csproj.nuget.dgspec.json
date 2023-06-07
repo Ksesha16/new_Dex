@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\antox\\source\\repos\\new_Dex\\new_dex\\new_dex\\new_dex.csproj": {}
+    "D:\\dex\\new_dex\\new_dex\\new_dex.csproj": {}
   },
   "projects": {
-    "C:\\Users\\antox\\source\\repos\\new_Dex\\new_dex\\new_dex\\new_dex.csproj": {
+    "D:\\dex\\new_dex\\new_dex\\new_dex.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\antox\\source\\repos\\new_Dex\\new_dex\\new_dex\\new_dex.csproj",
+        "projectUniqueName": "D:\\dex\\new_dex\\new_dex\\new_dex.csproj",
         "projectName": "new_dex",
-        "projectPath": "C:\\Users\\antox\\source\\repos\\new_Dex\\new_dex\\new_dex\\new_dex.csproj",
-        "packagesPath": "C:\\Users\\antox\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\antox\\source\\repos\\new_Dex\\new_dex\\new_dex\\obj\\",
+        "projectPath": "D:\\dex\\new_dex\\new_dex\\new_dex.csproj",
+        "packagesPath": "C:\\Users\\днс\\.nuget\\packages\\",
+        "outputPath": "D:\\dex\\new_dex\\new_dex\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\antox\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\днс\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,8 +51,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -65,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.116\\RuntimeIdentifierGraph.json"
         }
       }
     }

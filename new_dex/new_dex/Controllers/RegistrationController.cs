@@ -17,7 +17,7 @@ public class RegistrationController : Controller
     public IActionResult Register(string login, string password, string email)
     {
         // Путь к файлу Excel
-        string filePath = @"C:\Users\antox\source\repos\new_Dex\new_dex\Tabel\User.xlsx";
+        string filePath = @"D:\dex\new_dex\Tabel\User.xlsx";
 
         // Установка контекста лицензирования
         ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
