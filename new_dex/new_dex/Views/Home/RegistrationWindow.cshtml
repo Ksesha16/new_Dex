@@ -6,7 +6,7 @@
 <html>
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="~/css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="~/css/materialize.css" media="screen,projection" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link type="text/css" rel="stylesheet" href="~/css/site.css" />
 </head>
@@ -18,7 +18,8 @@
 
     <h1> Не зарегестрировались? </h1>
     <h2> <b>Тогда добро пожаловать! </b> </h2>
-    <form method="post" id="regform">
+    <form method="post" id="regform" action="@Url.Action("Register", "Registration")">
+        @Html.AntiForgeryToken()
         <div class="column">
         <div class="input-field col s3">
             <input name="Login" type="text" class="validate  ">
@@ -46,7 +47,7 @@
                     </p>
     </div>
             <button type="submit" id="RegBtn" class="waves-effect waves-light btn ButtonWhite">Регистрация</button>
-    </div>
+        </div>
         
         </form>
 

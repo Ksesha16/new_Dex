@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="~/css/materialize.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="~/css/site.css" />
+ 
+</head>
+
+<body class="BackgroundLite">
+    <nav>
+        <div>
+            
+            @*@using (DexterContext db = new DexterContext())
+            {
+                try
+                {
+                    string? name = db.Users.First(x => x.LoginOfUser == Initial.Login).NameOfUser;
+                    byte[]? avatar = db.Users.First(x => x.LoginOfUser == Initial.Login).Avatar;
+                    int? balance = db.Users.First(x => x.LoginOfUser == Initial.Login).Balance;
+                    if (avatar != null && name != null)
+                    {
+                        <img src="data:image/jpeg;base64,@(Convert.ToBase64String(avatar))" onclick="GoTo();" height="100px" weight="100px" class="brand-logo round" />
+                        <span class="left hide-on-med-and-down" id="nickname">@name</span>
+                        <div class="left hide-on-med-and-down balance">
+                            @if (balance != null)
+                            {
+                                <span>
+                                    @balance.ToString()
+                                </span>
+                            }
+                            else
+                            {
+                                <span>
+                                    0
+                                </span>
+                            }
+                            <span>
+                                руб.
+                            </span>
+                        </div>
+                    }
+                    else
+                    {
+                        <img src="~/other/images/StandartProfile.png" height="100px" weight="100px" onclick="GoTo();" class="brand-logo round" />
+                        <span class="left hide-on-med-and-down" id="nickname">@name</span>
+                    }
+                }
+                catch { }
+            }*@
+            <ul class="right hide-on-med-and-down">
+                <li> <a><i class="material-icons photo" data-title="Новости">newspaper</i></a> </li>
+                <li><a asp-action="ShopMenu" asp-controller="Home"><i class="material-icons photo" data-title="Магазин">computer</i></a></li>
+                <li><a href="collapsible.html"><i class="material-icons photo" data-title="Корзина">shopping_cart</i></a></li>
+                <li><a href="mobile.html"><i class="material-icons photo" data-title="Пользователи">group</i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="Category">
+    <ul class="collapsible">
+        <li>
+            <div class="collapsible-header">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">search</i>
+                        <input id="icon_prefix" name="Search" type="text" class="validate">
+                        <label for="icon_prefix">Поиск товаров</label>
+                    </div>
+            </div>
+            <div class="collapsible-body">
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <label>Materialize Select</label>
+                    </div>
+                    <p> Минимальная цена</p>
+                    <form action="#">
+                        <p class="range-field">
+                            <input type="range" id="test5" min="0" max="100" />
+                        </p>
+                    </form>
+                    <p> Максимальная цена</p>
+                    <form action="#">
+                        <p class="range-field">
+                            <input type="range" id="test5" min="0" max="100" />
+                        </p>
+                    </form>
+
+            </div>
+        </li>
+    </ul>
+    </div>
+    <div class="Base">
+        <div class="TwoBase">
+          <div>
+              <div class="imgdiv">
+              <img src="~/other//images/Emblema.png" width="175" height="175" class="round"/>
+                </div>
+                <div class="basediv">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">devices</i>
+                        <input id="icon_prefix" name="Name" type="text" class="validate" >
+                        <label for="icon_prefix">Название товара</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">attach_money</i>
+                        <input id="icon_prefix" name="Name" type="text" class="validate">
+                        <label for="icon_prefix">Цена товара</label>
+                    </div>
+
+                </div>
+                <div class="otherdiv">
+                    <h4> <i class="material-icons">description</i> Описание </h4>
+                    <textarea type="text"> </textarea>
+                    <h4>  <i class="material-icons">settings</i>  Характеристики</h4>
+                    <textarea type="text"> </textarea>
+                </div>
+          </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.1/angular-materialize.min.js"></script>
+    <script>$('.collapsible').collapsible();</script>
+    <script> $(document).ready(function () { $('select').formSelect(); });
+    </script>
+    <script type="text/javascript" src="~/js/materialize.js"></script>
+    <script src="~/js/ShopMenu.js"></script>
+    <script>
+        function GoTo() {
+            window.location.href = "https://localhost:44315/Home/UserProfile";
+        }
+    </script>
+</body>
+</html>
